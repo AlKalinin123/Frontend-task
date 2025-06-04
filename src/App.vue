@@ -1,15 +1,10 @@
 <template>
-  <h1>Hello Vue 3 + Vite!</h1>
+  <PricingContainer />
 </template>
 
-<script>
-export default {
-  name: 'App'
-}
+<script setup>
+import PricingContainer from './components/PricingContainer.vue';
 </script>
 
 <style>
-h1 {
-  color: #42b983;
-}
 </style>
