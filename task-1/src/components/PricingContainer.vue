@@ -1,11 +1,11 @@
 <template>
-  <div class="min-h-screen bg-black py-8 px-6 sm:px-12">
+  <div class="min-h-screen bg-black py-8">
     <!-- Header for the pricing section -->
-    <h1 class="text-center text-[#FFFFFF] text-[40px] font-bold mb-12">Pricing</h1>
+    <h1 class="text-center text-[#FFFFFF] text-[24px] font-bold mb-12">Pricing</h1>
 
     <!-- Grid container for the pricing cards -->
     <div
-      class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 sm:gap-x-2 justify-items-center sm:justify-center p-5 w-[600px] mx-auto"
+      class="grid grid-cols-1 sm:grid-cols-3 gap-y-6 justify-items-center sm:justify-center p-5 w-full max-w-[640px] mx-auto"
     >
       <!-- Loop through pricing plans data and render PricingCard for each -->
       <PricingCard
