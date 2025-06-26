@@ -1,0 +1,108 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.35);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal {
+  background: #fff;
+  border-radius: 18px;
+  max-width: 420px;
+  width: 95vw;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.13);
+  position: relative;
+  animation: slideUp 0.25s cubic-bezier(.4,1.6,.6,1);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px) scale(0.98); opacity: 0; }
+  to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.email {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.closeIcon {
+  color: #888;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  margin-left: 1rem;
+}
+
+.closeIcon:hover {
+  color: #e11d48;
+  transform: scale(1.2);
+}
+
+.section {
+  margin-bottom: 1.1rem;
+}
+
+.sectionTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #222;
+}
+
+.sectionContent {
+  font-size: 0.98rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.link {
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+  .sectionTitle {
+    font-size: 0.98rem;
+  }
+  .sectionContent {
+    font-size: 0.93rem;
+  }
+} 

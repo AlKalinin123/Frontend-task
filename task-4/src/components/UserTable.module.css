@@ -1,0 +1,121 @@
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 2rem 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+  color: #181818;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  background: #fff;
+  border-radius: 0;
+}
+
+th {
+  background: #f7f7f9;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  border-radius: 0;
+  color: #181818;
+}
+
+tr {
+  background: #fff;
+  transition: box-shadow 0.2s, transform 0.2s;
+  color: #222;
+}
+
+tr:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transform: translateY(-2px) scale(1.01);
+}
+
+td {
+  padding: 0.7rem 0.7rem;
+  font-size: 0.92rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
+  color: #222;
+}
+
+.emailLink, .websiteLink {
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+.actionIcon {
+  color: #e11d48;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionIcon:hover {
+  color: #be123c;
+  transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 1rem 0.2rem;
+  }
+  th, td {
+    padding: 0.4rem 0.3rem;
+    font-size: 0.89rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th {
+    display: none;
+  }
+  tr {
+    margin-bottom: 1.2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    border-radius: 0;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    min-height: 40px;
+  }
+  td:before {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.89rem;
+    content: attr(data-label);
+  }
+} 
