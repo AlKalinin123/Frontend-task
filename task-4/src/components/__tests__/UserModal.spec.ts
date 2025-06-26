@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { shallowMount } from '@vue/test-utils';
 import UserModal from '../UserModal.vue';
 import type { User } from '../../types/user.types';
